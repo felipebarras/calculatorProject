@@ -1,0 +1,87 @@
+/* Define cores em degradê */
+
+:root {
+  --palmeiras-verde-escuro: #1e3a23;
+  --palmeiras-verde-medio: #2c5e35;
+  --palmeiras-verde-claro: #6c997a;
+  --palmeiras-branco: #ffffff;
+}
+
+/* Estilo geral da calculadora */
+
+.calculadora {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 15px;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--palmeiras-verde-claro),
+    var(--palmeiras-verde-medio),
+    var(--palmeiras-verde-escuro)
+  );
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Estilo dos botões */
+.botao {
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  border-radius: 5px;
+  border: none;
+  color: var(--palmeiras-branco);
+  background-color: var(--palmeiras-verde-escuro);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* define o igual */
+.botao-igual {
+  height: 110px;
+}
+
+/* define o zero */
+.botao-zero {
+  width: 115px;
+}
+
+/* configura o hover do mouse sobre os botoes */
+.botao:hover {
+  background-color: var(--palmeiras-verde-claro);
+}
+
+/* display de resultado */
+#resultado {
+  font-size: 20px;
+  margin-bottom: 20px;
+  background-color: var(--palmeiras-branco);
+  width: auto;
+  height: 20px;
+  margin: 6px;
+  color: var(--palmeiras-verde-escuro);
+  text-align: right;
+  padding: 5px;
+}
+
+/* estilo geral da página */
+body {
+  background-image: linear-gradient(135deg, #2c5e35, #2a752c);
+  color: white;
+  font-family: arial;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+}
+
+/* .fundo {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 100vh;
+} */
